@@ -1,0 +1,167 @@
+.comentarios {
+    background: rgba(0,0,0,0.9);
+    color: #fff;
+    text-align: center;
+    max-width: 1000px;
+    margin-bottom: 20px;
+    overflow: hidden; /*permite que los elementos hijos se acomoden uno a lado del otro*/
+}
+
+
+.comentarios .column--25 {
+    padding: 10px;
+}
+
+.comentarios--img {
+    object-fit: cover;
+    border-radius: 80%;
+    width: 150px;
+    height: 150px;
+    margin: auto;
+    margin-top: 10px;
+}
+
+.comentarios--txt {
+    margin-bottom: 11px;
+    margin-top: 11px;
+}
+
+.container--flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.container {
+    width: 100%;
+    margin: auto;
+}
+
+.column {
+    
+    width: 100%;
+}
+
+.our-team {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+
+.our-team .container--flex {
+    align-items: flex-start;
+}
+
+.our-team__title {
+    font-family: cursive;
+    color: #000;
+    font-weight: bold;
+    font-size: 1.4em;
+    margin-bottom: 10px;
+}
+
+.our-team__img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin: auto;
+    margin-bottom: 10px;
+}
+
+.our-team__txt {
+    padding: 10px;
+   
+}
+
+.conocenos__title {
+    margin-top: 10px;
+    font-size: 1.7em;
+    text-decoration:underline
+}
+
+.presentacion {
+    text-align: center;
+    margin-bottom: 20px;
+    margin-top: 40px;
+}
+
+.id_video__presentacion {
+    width: 100%;
+    margin: auto;
+    
+}
+
+.video__presentacion {
+   margin-left: 27px;
+}
+
+@media screen and (min-width:480px) {
+    .our-team__img {
+        width: 150px;
+        height: 150px;
+    }
+    
+    .column--33 {
+        width: 33%;
+        align-items: flex-start;
+    }
+    
+     .column--50 {
+        width: 49%;
+    }
+}
+
+@media screen and (min-width:768px) {
+    .our-team__img {
+        width: 220px;
+        height: 220px;
+    }
+    
+    .comentarios--txt {
+    font-size: 1.1em;
+    }
+    
+    .comentarios .column--25 {
+        width: 49%;
+        float: left; /*Así acomodamos 2 div uno al lado del otro*/
+    }
+    
+    .comentarios--img {
+        height: 180px;
+            width: 180px;
+    }
+    .comentarios--txt {
+        font-size: 1.1em;
+    }
+}
+
+@media screen and (min-width:1024px) {
+    .our-team__img {
+        width: 310px;
+        height: 310px;
+    }
+    
+    .our-team__title {
+        font-size: 1.5em;
+        font-family: monospace;
+    }
+    
+     .comentarios--img {
+         height: 220px;
+            width: 220px;
+    }
+    
+    .comentarios--txt {
+        font-size: 1.2em;
+    }
+}
+
+
+@media screen and (min-width:1600px) {
+    .our-team__img {
+        width: 350px;
+        height: 350px;
+    }

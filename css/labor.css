@@ -1,0 +1,164 @@
+.group__title {
+    text-align: center;
+    margin-top: 20px;
+    text-decoration: underline;
+    margin-bottom: 20px;
+}
+
+.info .column--33 {
+    background: #000;
+    color: #fff;
+    padding: 15px;
+    margin-bottom: 30px;
+    width: 100%;
+}
+
+/*---------------------------------------galeria--------------------------------------------*/
+
+.gallery__img {
+  object-fit: cover;
+    margin-bottom: 10px;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+
+.gallery__img:hover {
+    transform: scale(1.02);
+}
+
+.gallery__img--big {
+    height: 400px;
+}
+
+.gallery__img--small {
+    height: 200px;
+}
+
+.modal {
+    width: 100%;
+    min-height: 100vh;
+    background: rgba(0,0,0,0.9);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000000;
+    display: none;
+}
+
+.modal__content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.modal__img {
+    width: 70%;
+}
+
+.modal__boton {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    background: #000;
+    font-size: 2em;
+    text-align: center;
+    border-radius: 50%;
+    font-family: monospace;
+}
+
+.modal--open {
+    display: block;
+}
+
+.conocenos__title {
+    font-family: cursive;
+    margin-bottom: 15px;
+}
+
+.presentacion {
+    text-align: center;
+    margin-bottom: 20px;
+    margin-top: 40px;
+}
+
+.id_video__presentacion {
+    width: 100%;
+    margin: auto;
+    
+}
+
+
+.video__presentacion {
+   margin-left: 27px;
+}
+
+.our-team__title {
+    font-family: cursive;
+    color: #000;
+    font-weight: bold;
+    font-size: 1.4em;
+    margin-bottom: 10px;
+}
+.our-team__txt {
+    padding: 10px;
+   
+}
+
+@media (min-width:480px) {
+     .info, .cursos {
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .info .column--33 {
+        width: 32%;
+         align-items: flex-start;
+    }
+    
+     .info__titulo {
+        font-size: 30px;
+        margin: 5px 0;
+    }
+    
+     .column--50-25 {
+        width: 49%;
+        }
+    
+}
+
+@media (min-width:768px) {
+     .info .column--33  {
+        width: 32%;
+    }
+    
+     .column--50-25 {
+        width: 24.5%;
+    }
+}
+
+
+@media (min-width:1024px) {
+
+    
+    .info .column--33 {
+        padding: 30px;
+    }
+    
+    .info__titulo {
+        font-size: 40px;
+        text-align: center;
+    }
+    
+     .our-team__title {
+        font-size: 1.5em;
+        font-family: monospace;
+    }
+}
+
